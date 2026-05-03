@@ -17,15 +17,15 @@ const classes = [
 
 const plans = [
   {
-    name: 'BEGINNER PLAN', price: '$500 / month',
+    name: 'BEGINNER PLAN', price: '$99 / month',
     features: ['Personal Trainer', 'Convenient Time', 'Special Class', 'Group Training', 'Free Fitness Training'],
   },
   {
-    name: 'PREMIUM PLAN', price: '$1099 / month',
+    name: 'PREMIUM PLAN', price: '$399 / month',
     features: ['Personal Trainer', 'Convenient Time', 'Special Class', 'Group Training', 'Access To Special Equipments'],
   },
   {
-    name: 'ULTIMATE PLAN', price: '$2099 / month',
+    name: 'ULTIMATE PLAN', price: '999$ / month',
     features: ['Personal Trainer', 'Flex Timing', 'Special Class', 'Group Training', 'Access To Special Equipments', '24/7 Access To Gym'],
   },
 ]

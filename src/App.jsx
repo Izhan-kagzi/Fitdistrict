@@ -8,6 +8,7 @@ import Contact from './pages/Contact.jsx'
 import Login from './pages/Login.jsx'
 import Status from './pages/Status.jsx'
 import Admin from './pages/Admin.jsx'
+import PlanDetail from './pages/PlanDetail';
 
 // This wrapper provides the standard look for public pages
 function Layout({ children }) {
@@ -23,6 +24,7 @@ function Layout({ children }) {
 export default function App() {
   return (
     <Routes>
+      <Route path="/plan/:planId" element={<PlanDetail />} />
       {/* 1. Pages WITHOUT Navbar/Footer (Full Screen) */}
       
       {/* Admin Panel */}

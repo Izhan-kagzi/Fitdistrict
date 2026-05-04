@@ -17,15 +17,15 @@ const classes = [
 
 const plans = [
   {
-    name: 'BEGINNER PLAN', price: '$99 / month',
+    name: 'BEGINNER PLAN', price: '$500 / month',
     features: ['Personal Trainer', 'Convenient Time', 'Special Class', 'Group Training', 'Free Fitness Training'],
   },
   {
-    name: 'PREMIUM PLAN', price: '$399 / month',
+    name: 'STANDARD PLAN', price: '$1099 / month',
     features: ['Personal Trainer', 'Convenient Time', 'Special Class', 'Group Training', 'Access To Special Equipments'],
   },
   {
-    name: 'ULTIMATE PLAN', price: '999$ / month',
+    name: 'PREMIUM PLAN', price: '$2099 / month',
     features: ['Personal Trainer', 'Flex Timing', 'Special Class', 'Group Training', 'Access To Special Equipments', '24/7 Access To Gym'],
   },
 ]
@@ -99,8 +99,8 @@ export default function Home() {
         <div>
           <div className="section-sub">ABOUT OUR GYM</div>
           <div className="section-title">SAFE BODY BUILDING PROPER SOLUTIONS</div>
-          <p>We provide professional gym training with modern equipment and expert trainers to help you reach your fitness goals safely and efficiently.</p>
-          <p>Our programs are designed for beginners and professionals with flexible membership plans and personal coaching.</p>
+          <p>We provide professional gym training with modern equipment and expert trainers to help you reach your fitness goals safely and efficiently.[cite: 2]</p>
+          <p>Our programs are designed for beginners and professionals with flexible membership plans and personal coaching.[cite: 2]</p>
           <Link to="/about" className="btn" style={{ marginTop: '20px' }}>READ MORE</Link>
         </div>
       </section>
@@ -146,6 +146,24 @@ export default function Home() {
               <h3>{p.name}</h3>
               <h2 style={{ color: '#ff1f1f', fontSize: '24px', margin: '10px 0' }}>{p.price}</h2>
               {p.features.map((f, j) => <p key={j}>→ {f}</p>)}
+              
+              {/* Updated Dynamic Link Button */}
+              <Link 
+                to={`/plan/${p.name.split(' ')[0].toLowerCase()}`} 
+                className="btn-small"
+                style={{
+                  marginTop: '20px', 
+                  display: 'inline-block',
+                  background: '#ff1f1f', 
+                  color: 'white', 
+                  padding: '10px 20px', 
+                  borderRadius: '5px',
+                  textDecoration: 'none',
+                  fontWeight: 'bold'
+                }}
+              >
+                VIEW DETAILS
+              </Link>
             </div>
           ))}
         </div>
@@ -167,7 +185,7 @@ export default function Home() {
             </div>
             <div className="feature-text">
               <h3>Thousands of Equipments</h3>
-              <p>Modern machines and world-class equipment for every fitness level and training goal.</p>
+              <p>Modern machines and world-class equipment for every fitness level and training goal.[cite: 2]</p>
             </div>
           </div>
           <div className="feature-item">
@@ -183,7 +201,7 @@ export default function Home() {
             </div>
             <div className="feature-text">
               <h3>Open 24/7 FitDistrict Gym Fitness</h3>
-              <p>We never close. Train at any hour that suits your schedule, any day of the year.</p>
+              <p>We never close. Train at any hour that suits your schedule, any day of the year.[cite: 2]</p>
             </div>
           </div>
           <div className="feature-item">
@@ -199,7 +217,7 @@ export default function Home() {
             </div>
             <div className="feature-text">
               <h3>Food Supplements</h3>
-              <p>Expert-recommended nutrition and supplement plans to support your training and recovery.</p>
+              <p>Expert-recommended nutrition and supplement plans to support your training and recovery.[cite: 2]</p>
             </div>
           </div>
         </div>

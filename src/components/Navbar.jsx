@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav>
       {/* Zone 1: Left */}
       <Link to="/" className="logo">
-        <span>FIT</span>DISTRICT
+        <span>FIT</span>DIS<span>TRICT</span>
       </Link>
 
       {/* Zone 2: Center */}

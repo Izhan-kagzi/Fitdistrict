@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const stats = [
   { target: 500, suffix: '+', label: 'Members' },
-  { target: 10,  suffix: '+', label: 'Expert Trainers' },
-  { target: 5,   suffix: '+', label: 'Years Experience' },
+  { target: 5,  suffix: '+', label: 'Expert Trainers' },
+  { target: 10,   suffix: '+', label: 'Years Experience' },
   { target: 20,  suffix: '+', label: 'Programs' },
 ]
 
@@ -17,15 +17,15 @@ const classes = [
 
 const plans = [
   {
-    name: 'BEGINNER PLAN', price: '$500 / month',
+    name: 'BEGINNER PLAN', price: '$99 / month',
     features: ['Personal Trainer', 'Convenient Time', 'Special Class', 'Group Training', 'Free Fitness Training'],
   },
   {
-    name: 'STANDARD PLAN', price: '$1099 / month',
+    name: 'STANDARD PLAN', price: '$399 / month',
     features: ['Personal Trainer', 'Convenient Time', 'Special Class', 'Group Training', 'Access To Special Equipments'],
   },
   {
-    name: 'PREMIUM PLAN', price: '$2099 / month',
+    name: 'PREMIUM PLAN', price: '$999 / month',
     features: ['Personal Trainer', 'Flex Timing', 'Special Class', 'Group Training', 'Access To Special Equipments', '24/7 Access To Gym'],
   },
 ]
@@ -99,8 +99,8 @@ export default function Home() {
         <div>
           <div className="section-sub">ABOUT OUR GYM</div>
           <div className="section-title">SAFE BODY BUILDING PROPER SOLUTIONS</div>
-          <p>We provide professional gym training with modern equipment and expert trainers to help you reach your fitness goals safely and efficiently.[cite: 2]</p>
-          <p>Our programs are designed for beginners and professionals with flexible membership plans and personal coaching.[cite: 2]</p>
+          <p>We provide professional gym training with modern equipment and expert trainers to help you reach your fitness goals safely and efficiently.</p>
+          <p>Our programs are designed for beginners and professionals with flexible membership plans and personal coaching.</p>
           <Link to="/about" className="btn" style={{ marginTop: '20px' }}>READ MORE</Link>
         </div>
       </section>
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
             <div className="feature-text">
               <h3>Thousands of Equipments</h3>
-              <p>Modern machines and world-class equipment for every fitness level and training goal.[cite: 2]</p>
+              <p>Modern machines and world-class equipment for every fitness level and training goal.</p>
             </div>
           </div>
           <div className="feature-item">
@@ -201,7 +201,7 @@ export default function Home() {
             </div>
             <div className="feature-text">
               <h3>Open 24/7 FitDistrict Gym Fitness</h3>
-              <p>We never close. Train at any hour that suits your schedule, any day of the year.[cite: 2]</p>
+              <p>We never close. Train at any hour that suits your schedule, any day of the year.</p>
             </div>
           </div>
           <div className="feature-item">
@@ -217,7 +217,7 @@ export default function Home() {
             </div>
             <div className="feature-text">
               <h3>Food Supplements</h3>
-              <p>Expert-recommended nutrition and supplement plans to support your training and recovery.[cite: 2]</p>
+              <p>Expert-recommended nutrition and supplement plans to support your training and recovery.</p>
             </div>
           </div>
         </div>
